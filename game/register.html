@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆页面</title>
+    <style>
+        body{
+            background: url("snake.jpg")no-repeat;
+            background-size:cover;
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<form action="game.html" method="get">
+    <h1>游戏账号登陆</h1>
+    <p id="number">
+        <label for="username">&nbsp;&nbsp;&nbsp;&nbsp;用户名：</label>
+        <input type="text" id="username" name="username">
+    </p>
+    <p id="password">
+        <label for="pass">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密码：</label>
+        <input type="password" id="pass" name="pass">
+    </p>
+    <p>
+        难度：
+        <select name="" id="">
+            <option value="" selected>简单</option>
+            <option value="">一般</option>
+            <option value="">困难</option>
+            <option value="">灾难</option>
+        </select>
+    </p>
+    <p>
+        <input type="submit" value="开始游戏">
+        <a href="register.html">重置</a>
+        <a href="login.html">注册</a>
+    </p>
+</form>
+</body>
+</html>
