@@ -10,27 +10,32 @@
         }
         h1{
             text-align: center;
+            /*text-indent: 20px;首行缩进*/
         }
         p{
             text-align: center;
         }
 
+        /*a{
+            text-decoration: none;!*取消链接的下划线 ；underline:下划线；overline：上划线；linethrough：删除线*!
+        }*/
+
     </style>
 </head>
 <body>
-<form action="game.html" method="get">
+<form action="game.html" method="post">
     <h1>游戏账号登陆</h1>
     <p id="number">
         <label for="username">&nbsp;&nbsp;&nbsp;&nbsp;用户名：</label>
-        <input type="text" id="username" name="username">
+        <input type="text" id="username" name="username" required="required" placeholder="请输入用户名">
     </p>
     <p id="password">
         <label for="pass">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密码：</label>
-        <input type="password" id="pass" name="pass">
+        <input type="password" id="pass" name="pass"required="required" placeholder="请输入密码">
     </p>
     <p>
         难度：
-        <select name="" id="">
+        <select>
             <option value="" selected>简单</option>
             <option value="">一般</option>
             <option value="">困难</option>
@@ -39,8 +44,8 @@
     </p>
     <p>
         <input type="submit" value="开始游戏">
-        <a href="register.html">重置</a>
-        <a href="login.html">注册</a>
+        <a href="register.html"><input type="button"value="重置"></a>
+        <a href="login.html"><input type="button"value="注册"></a>
     </p>
 </form>
 </body>
