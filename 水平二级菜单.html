@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>二级菜单</title>
+    <style>
+        /*css reset*/
+        ul,ol{
+            list-style: none;
+        }
+        *{
+            padding: 0;
+            margin: 0;}
+        a{text-decoration: none;}
+        img{
+            border: 0}
+
+
+        #menu{
+            width: 500px;
+            height: 30px;
+        }
+        #menu li{
+            width: 120px;
+            height: 30px;
+            float: left;
+            margin-right: 2px;
+        }
+        #menu .main-menu{
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: purple;
+            color: #ffffff;
+            text-indent: 10px;
+            line-height: 30px;
+        }
+        #menu .main-menu:hover{
+            background: orange;
+        }
+        #menu .sub-menu a{
+                width: 100%;
+                height: 100%;
+            display: block;
+            color: blue;
+        }
+        #menu .sub-menu a:hover{
+            background: orange;
+        }
+        #menu .sub-menu{
+            background: #cccccc;
+            overflow: hidden;
+            display: none;
+        }
+        #menu li:hover .sub-menu{
+            display: block;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+<ul id="menu">
+    <li>
+        <a href="" class="main-menu">link 1</a>
+        <ul class="sub-menu">
+            <li><a href="">submine 1</a></li>
+            <li><a href="">submine 2</a></li>
+            <li><a href="">submine 3</a></li>
+        </ul>
+    </li>
+    <li><a href="" class="main-menu">link 2</a></li>
+    <li><a href="" class="main-menu">link 3</a></li>
+    <li><a href="" class="main-menu">link 4</a></li>
+</ul>
+</body>
+</html>

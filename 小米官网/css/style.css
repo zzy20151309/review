@@ -1,0 +1,106 @@
+/* css reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border: 0;
+}
+.wrapper{
+    width: 1226px;
+    margin: 0 auto;
+}
+/*nav-1*/
+/*main-nav开始*/
+.nav-1{
+    background: #333333;
+    height:40px;
+}
+.nav-1 .main-nav{
+    float: left;
+}
+.nav-1 .main-nav li{
+    float: left;
+}
+.nav-1 .main-nav li a{
+    color: #b0b0b0;
+    line-height: 40px;
+    font-size: 12px;
+    margin: 0 .5em;
+}
+.nav-1 .main-nav li span{
+    color: #424242;
+}
+.nav-1 .main-nav li a:hover{
+    color: white;
+}
+/*main-nav结束*/
+/*cart开始*/
+.nav-1 .cart {
+    float: right;
+    width: 120px;
+    height: 40px;
+    background: #424242;
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+}
+.nav-1 .cart a {
+    color: #b0b0b0;
+    font-size: 12px;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.nav-1 .cart a:hover{
+    color: #ff6700;
+    background: #ffffff;
+}
+.nav-1 .cart .cart-box{
+    width: 316px;
+    height: 0px;
+    position: absolute;
+    top:40px;
+    right: 0px;
+    color: #424242;
+    font-size: 12px;
+    line-height: 100px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.15);/*边框1水平2竖直3模糊度4外延值5颜色6内外阴影*/
+    overflow: hidden;/*避免动画效果中文字部分溢出*/
+    display: none;
+}
+.nav-1 .cart:hover .cart-box{
+    display: block;
+    animation:show 0.2s ease-in  forwards;/*1名字2执行时间3运动方式（由慢变快)(4延迟)5循环次数*/
+}
+@keyframes show {
+    100%{height: 100px}
+}
+/*cart结束*/
+/*user-info开始*/
+.nav-1 .user-info{
+    float: right;
+}
+.nav-1 .user-info li{
+    float: left;
+}
+.nav-1 .user-info li a{
+    color: #b0b0b0;
+    line-height: 40px;
+    font-size: 12px;
+    margin: 0 .5em;
+}
+.nav-1 .user-info li span{
+    color: #424242;
+}
+.nav-1 .user-info li a:hover{
+    color: white;
+}
+/*user-info结束*/
+/*nav-1结束*/
