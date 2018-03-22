@@ -1,3 +1,4 @@
+/********************************************小米官网公有部分****************************************/
 /* css reset*/
 *{
     margin: 0;
@@ -13,9 +14,10 @@ img{
     border: 0;
 }
 .wrapper{
-    width: 1226px;
-    margin: 0 auto;
-}
+     width: 1226px;
+     margin: 0 auto;
+ }
+/****************************************************/
 /*nav-1*/
 /*main-nav开始*/
 .nav-1{
@@ -74,6 +76,8 @@ img{
     box-shadow:0 2px 10px rgba(0,0,0,0.15);/*边框1水平2竖直3模糊度4外延值5颜色6内外阴影*/
     overflow: hidden;/*避免动画效果中文字部分溢出*/
     display: none;
+    z-index: 1;
+    background: white;
 }
 .nav-1 .cart:hover .cart-box{
     display: block;
@@ -104,13 +108,12 @@ img{
 }
 /*user-info结束*/
 /*nav-1结束*/
-
-
-
+/***********************************************************/
 /*header开始*/
 .header {
-    background: burlywood;
+    /*background: burlywood;*/
     height: 100px;
+    position: relative;
 }
 /*logo开始*/
 .header .logo{
@@ -143,20 +146,79 @@ img{
 .header .nav-header .main-nav{
     float: left;
     height: 100px;
-    line-height: 88px;
 }
-.header .nav-header .main-nav a{
+.header .nav-header .main-nav > a{
     color: #333333;
     font-size: 16px;
     width: 100%;
     height: 100%;
     display: block;
     padding: 0 10px;
+    line-height: 88px;
 }
-.header .nav-header .main-nav a:hover{
+.header .nav-header .main-nav > a:hover{
     color:#ff6700;
 }
 /*nav-header结束*/
+/*sub-header开始*/
+.header .sub-header{
+    position:absolute ;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    display: none;
+    z-index: 1;
+    overflow: hidden;/*隐藏溢出部分*/
+}
+.header .nav-header .main-nav:hover .sub-header{
+    display: block;
+    animation:shows 0.3s ease-in  0.1s forwards;
+}
+@keyframes shows{
+    100%{
+        height: 229px;}
+}
+.header .sub-header .sub-nav{
+    float: left;
+    width: 204px;
+    height: 201px;
+    text-align: center;
+}
+.header .sub-nav .flags{
+    height: 22px;
+}
+.header .sub-nav .flag{
+    display: inline-block;
+    height: 18px;
+    font-size: 12px;
+    color: #ff6700;
+    padding: 1px 20px;
+    border: 1px solid #ff6700;
+}
+.header .sub-nav .img a{
+    width: 204px;
+    height: 110px;
+    display: block;
+    margin-top: 10px;
+}
+.header .sub-nav img{
+    width: 160px;
+    height: 110px;
+}
+.header .sub-nav .title{
+    height: 20px;
+}
+.header .sub-nav .title a{
+    font-size: 12px;
+    color: #333333;
+}
+.header .sub-nav p{
+    height: 20px;
+}
+/*sub-header结束*/
 /*search开始*/
 .header .search{
     float: right;
@@ -166,6 +228,7 @@ img{
     margin-top: 25px;
     font-size: 16px;
 }
+/****************************************************************/
 
 
 
